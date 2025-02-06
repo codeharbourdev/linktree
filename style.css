@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f2dfd7;
+}
+
+.linktree-container {
+    height: 95vh;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.link-tree {
+    height: 100%;
+    width: 500px;
+    margin: auto;
+    background-color: #f2dfd7;
+    border: 5px solid blue;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px blue;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    height: 200px;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-image: url(banner.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    box-shadow: -0px 5px 10px black;
+}
+
+@media (max-width: 550px) {
+    .link-tree {
+        width: 90%;
+    }
+
+    nav {
+        background-image: url(banner.jpg);
+        background-size: 100% 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    nav {
+        height: 150px;
+    }
+}
+
+main {
+    height: 75%;
+    width: 100%;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main div {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 20px;
+}
+
+main div a {
+    height: 50px;
+    width: 100%;
+    background-color: #f2dfd7;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    border: 2px solid blue;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px blue;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: serif;
+}
+
+main div p:hover {
+    text-decoration: underline;
+}
+
+main div i {
+    margin-left: 190px;
+}
+
+@media (max-width: 550px) {
+    main div i {
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 250px) {
+    main div i {
+        margin-left: 30px;
+    }
+}
